@@ -7,8 +7,11 @@ body{
 .collapse{
     display: flex!important;
     justify-content: flex-end;
+<<<<<<< HEAD
 }
 
 i{
     font-size: 5em;
+=======
+>>>>>>> main
 }

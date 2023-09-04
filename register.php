@@ -4,7 +4,11 @@
 
 <div class="container">
     <h1>Contact form</h1>
+<<<<<<< HEAD
     <form action="model/inscription.php" method="post">
+=======
+    <form action="inscription.php" method="post">
+>>>>>>> main
         <div class="form-group mt-5 mb-5 d-flex">
             <label class="me-xl-5">Gender :</label>
             <div class="form-check">

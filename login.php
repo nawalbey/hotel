@@ -4,7 +4,11 @@
 
 <div class="container">
     <h1>Contact form</h1>
+<<<<<<< HEAD
     <form action="/model/connexion.php" method="post">
+=======
+    <form action="connexion.php" method="post">
+>>>>>>> main
 
         <div class="form-group">
             <label for="email">Email :</label>
