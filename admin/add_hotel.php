@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include_once "../inc/header.php" ?>
 
 <div class="container">
@@ -26,8 +25,3 @@
 </div>
 
 <?php include_once "../inc/footer.php" ?>
-=======
-<?php include_once "../inc/header.php"?>
-
-<?php include_once "../inc/footer.php"?>
->>>>>>> main

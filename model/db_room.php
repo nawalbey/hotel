@@ -22,7 +22,7 @@ if (isset($_POST['add_room'])) {
         try {
             $request->execute(array($roomNumber, $roomPrice, $imgName, $person, $category, $hotel));
             //redirection vers list
-            header("location:http://localhost/hotel/admin/list_room.php")
+            header("location:http://localhost/hotel/admin/list_room.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

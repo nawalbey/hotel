@@ -1,17 +1,29 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: aquamarine;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
 }
 
-.collapse{
-    display: flex!important;
-    justify-content: flex-end;
-<<<<<<< HEAD
+.collapse {
+  display: flex !important;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-i{
-    font-size: 5em;
-=======
->>>>>>> main
+i {
+  font-size: 4em;
+}
+.navbar-brand {
+  background-color: pink;
+}
+.img_room{
+    height: 200px;
+
+}
+.img_room img{
+    height: 100%;
+
+}
+.btn-info{
+   background-color: palevioletred;
 }

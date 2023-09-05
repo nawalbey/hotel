@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "inc/database.php";
 if (isset($_POST['submit'])) {
     $email = htmlspecialchars($_POST['email']);
@@ -21,9 +22,14 @@ if (isset($_POST['submit'])) {
             if (password_verify($password, $userInfo['password'])) {
                 //si l'utulisateur est un admin
                 if ($userInfo['role'] == "admin") {
+                    // definir la variable de session role 
+                    $_SESSION['role'] = "admin";
                     header("location: admin/admin.php");
 
                 } else {
+                    // definir la variable de session role 
+                    $_SESSION['role'] = $userInfo["role"];
+                    $_SESSION['id_user'] = $userInfo["id_user"];
                     header("location: user_home.php");
 
                 }
