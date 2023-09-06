@@ -22,7 +22,7 @@ $listRoom = roomList();
                     <?= $room['persons']; ?> Persons
                 </p>
                 <a class="btn-info"
-                    href="model/db_booking.php?room=<? $room['id_room']; ?> &price=<?= $room['price'] ?>">book this room</a>
+                    href="booking.php?room=<?= $room['id_room']; ?>&price=<?= $room['price'] ?>">book this room</a>
 
             </div>
         </div>

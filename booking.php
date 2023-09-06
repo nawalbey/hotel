@@ -6,12 +6,12 @@ include_once "inc/header.php";
 
 <div class="container">
 
-    <form action="/model/connexion.php" method="post">
-        <input type="text" name="id_room" value="=<?= $_get['room'] ?>" hidden>
-        <input type="text" name="price" value="=<?= $_get['price'] ?>" hidden>
+    <form action="model/db_booking.php" method="post">
+        <input type="text" name="id_room" value="<?= $_GET['room'] ?>" hidden>
+        <input type="text" name="price" value="<?= $_GET['price'] ?>" hidden>
         <div class="form-group">
             <label for="email">start date:</label>
-            <input type="date" class="form-control" name="star_date">
+            <input type="date" class="form-control" name="start_date">
         </div>
 
         <div class="form-group">

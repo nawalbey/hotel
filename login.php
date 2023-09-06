@@ -7,7 +7,7 @@ include_once "<inc/header.php"; ?>
 
 <div class="container">
     <h1>Contact form</h1>
-    <form action="/model/connexion.php" method="post">
+    <form action="./model/connexion.php" method="post">
 
         <div class="form-group">
             <label for="email">Email :</label>

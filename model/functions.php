@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"]."/hotel/inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/hotel/inc/database.php";
 
 function HotelList()
 {
@@ -21,7 +21,7 @@ function HotelList()
 }
 function roomList()
 {
-    // se connecter a la db (date base) ou bd (base de donnees)
+    // se connecter a la db (data base) ou bd (base de donnees)
     $db = dbConnexion();
     //preparer la requete
     $request = $db->prepare("SELECT * FROM rooms");
@@ -35,6 +35,27 @@ function roomList()
         echo $e->getMessage();
     }
     return $listroom;
+
+
+}
+
+
+function userBookList($idUser)
+{
+    // se connecter a la db (data base) ou bd (base de donnees)
+    $db = dbConnexion();
+    //preparer la requete
+    $request = $db->prepare("SELECT * FROM bookings WHERE user_id = ? AND booking_state = ?");
+    //executer la requete
+    $userBookList = null;
+    try {
+        $request->execute(array($idUser, 'in progress'));
+        //recuperer le resultat dans un tableau 
+        $userBookList= $request->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $userBookList;
 
 
 }
